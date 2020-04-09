@@ -17,6 +17,7 @@
 	--text-medium: #808080;
 	--text-dark: #222222;
 	--highlight: #91FFF0;
+	--current: #C8FFF5;
 	--shadow: #808080;
 	--primary-font: 'Lato', sans-serif;
 	--secondary-font: 'Mate SC', serif;
@@ -86,7 +87,7 @@ font-size: 18px;
 
 .nav .current {
 	color: var(--text-medium);
-	background-color: rgb(189, 254, 245);
+	background-color: var(--current);
 	border-radius: 10%;
 }
 
