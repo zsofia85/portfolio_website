@@ -48,7 +48,7 @@ padding-top: 40px;
 }
 
 h3 {
-	font-family: var(--primary-font);
+font-family: var(--primary-font);
 color: var(--text-medium);
 font-size: 18px;
 }
