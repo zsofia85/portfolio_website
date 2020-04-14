@@ -21,6 +21,7 @@
 	--shadow: #808080;
 	--primary-font: 'Lato', sans-serif;
 	--secondary-font: 'Mate SC', serif;
+	--p-font: 'Didact Gothic', sans-serif;
 }
 
 html,
@@ -52,7 +53,16 @@ h3 {
 font-family: var(--primary-font);
 color: var(--text-medium);
 font-size: 18px;
+line-height: 1.5em;
 }
+
+p {
+	margin: 0;
+	font-family: var(--p-font);
+	color: var(--text-medium);
+	font-size: 15px;
+	line-height: 1.5em;
+	}
 
 /* -- navigation section of page -- */
 
@@ -125,7 +135,7 @@ font-size: 18px;
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	margin: 110px 0 125px 0;
+	margin: 110px 0 70px 0;
 	position: relative;
 	z-index: 0;
 }
@@ -174,7 +184,7 @@ font-size: 18px;
 }
 
 .postit.research:hover:before{
-	border-width: 25px;
+	border-width: 35px;
 	border-color: transparent #dadada #dadada transparent;
 	border-radius: 3%;
 	transition: .8s;
@@ -193,7 +203,7 @@ font-size: 18px;
 }
 
 .postit.design:hover:before{
-	border-width: 25px;
+	border-width: 35px;
 	border-color: transparent #dadada #dadada transparent;
 	border-radius: 3%;
 	transition: .8s;
@@ -212,13 +222,27 @@ font-size: 18px;
 }
 
 .postit.sustainability:hover:before{
-	border-width: 25px;
+	border-width: 35px;
 	border-color: transparent #dadada #dadada transparent;
 	border-radius: 3%;
 	transition: .8s;
 }
 
 /* -- effect ends here -- */
+
+.pitch-wrap {
+	width: 100%;
+	height: 15vh;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.pitch {
+	width: 50%;
+	display: inline-block;
+	text-align: center;
+}
 
 
 /* -- formatting footer -- */
@@ -266,4 +290,56 @@ footer h3 {
 	justify-content: center;
 }
 
-	
+/* -- formatting about.html starts here --*/
+
+.h1-border{
+	width: 50%;
+	margin-bottom: 30px;
+	border-top: solid 1px var(--text-medium);
+	border-bottom: solid 1px var(--text-medium);
+}
+
+.container-about{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 50px 0 70px 0;
+}
+
+.about-wrapper {
+	width: 25%;
+	display: inline-block;
+	text-align: left;
+	margin-right: 30px;
+	/*border: solid 2px black;*/
+}
+
+.process-wrapper {
+	width: 50%;
+	display: inline-block;
+	justify-content: center;
+	/*border: solid 2px black;*/
+}
+
+.process-wrapper-top{
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	/*border: solid 2px black;*/
+}
+
+.mini-postit{
+	width: 33.33%;
+	height: 200px;
+	box-shadow: 3px 6px 12px #808080;
+	border-radius: 2%;
+	text-align: center;
+}
+
+.profil {
+	margin: 0;
+	width: 100%;
+}
