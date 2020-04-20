@@ -19,6 +19,7 @@
 	--highlight: #91FFF0;
 	--current: #C8FFF5;
 	--shadow: #808080;
+	--button: #c8fff5;
 	--primary-font: 'Lato', sans-serif;
 	--secondary-font: 'Mate SC', serif;
 	--p-font: 'Didact Gothic', sans-serif;
@@ -46,7 +47,8 @@ h1 {
 h2 { font-family: var(--secondary-font);
 color: var(--text-dark);
 font-size: 25px;
-padding-bottom: 40px;
+padding: 40px 0;
+margin: 0;
 }
 
 h3 {
@@ -72,19 +74,12 @@ p {
 	display: flex;
 	align-items: center;
 	list-style-type: none;
-	/* margin: 4vh 1.5vw; */
-	/*  Mivel azt mondod hogy 100% arra még ráteszi az álltalad megadott margint és igy "kilóg" a képből ezért padding hogy befelé nyomd az elemeket. */
 	padding: 2rem;
 }
-
-/*.nav li {
-	display:inline-block;
-}*/
 
 .nav a {
 	margin: 0;
 	padding: 0.4em 2em;
-	/*display: inline-block;*/
 	color: var(--text-medium);
 	font-family: var(--primary-font);
 	font-size: 20px;
@@ -105,14 +100,17 @@ p {
 
 .nav .home {
 	display: inline-block;
-	/* margin-left: 850px;  */
-	/* Ez nem kell mert solid px */
 	border: none;
 }
-/*  Ez more responsive mert magától állitja a távolságot*/
+
 .nav li:last-child{
 	margin-left: auto;
 }
+
+#frontPage #logo {
+display: none;
+}
+
 /* -- mid section of page -- */
 
 .container-intro{
@@ -129,7 +127,6 @@ p {
 	width: 40%;
 	background-color: rgb(255, 255, 255);
 	border-radius: 70px;
-	/*box-shadow: 1px 1px 1px #808080;*/
 }
 
 .intro-txt{
@@ -147,8 +144,7 @@ p {
 	z-index: 0;
 }
 
-.gap { margin: 0 15px;
-}
+.gap { margin: 0 15px;}
 
 .research {background-color: var(--background-blue);}
 
@@ -211,7 +207,7 @@ p {
 	right: 0;
 	border-style: solid;
 	border-color: transparent #FFFABA #FFFABA transparent;
-	background: rgb(240, 233, 126);
+	background: rgb(242, 234, 124);
 	display: block;
 	width: 0;
 }
@@ -320,31 +316,26 @@ footer h3 {
 }
 
 .about-wrapper {
-	width: 25%;
+	width: 20%;
 	display: inline-block;
 	text-align: left;
 	margin-right: 30px;
-	/*border: solid 2px black;*/
 }
 
-.process-wrapper {
+.wrapper-box{
 	width: 50%;
-	display: inline-block;
-	justify-content: center;
-	/*border: solid 2px black;*/
+	padding-left: 30px;
 }
 
 .process-wrapper-top{
 	padding: 0;
 	margin: 0;
-	width: 100%;
 	display: flex;
 	justify-content: center;
-	/*border: solid 2px black;*/
 }
 
 .mini-postit{
-	width: 33.33%;
+	width: 33.33333%;
 	box-shadow: 3px 6px 12px #808080;
 	border-radius: 2%;
 	text-align: center;
@@ -354,3 +345,127 @@ footer h3 {
 	margin: 0;
 	width: 100%;
 }
+.process-txt {
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.yellow-background{
+	background-color: var(--background-yellow);
+	background-image: linear-gradient(var(--background-yellow), rgb(242, 234, 124));
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	border-radius: 2%;
+}
+
+.circle-white {
+	width: 60px;
+	height: 60px;
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	align-items: center;
+	border-radius: 90%;
+	background-color: #808080;
+	box-shadow: 0px 3px 6px #808080;
+}
+
+.circle-white i {
+	color: var(--text-light);
+}
+
+.notes-white{
+	background-color: #FFFFFF;
+	border-radius: 2%;
+	box-shadow: 0px 3px 6px #808080;
+	margin-bottom: -20px;
+	margin-top: 40px;
+	padding-top: 40px;
+}
+
+.notes-white h3 {
+	text-align: center;
+	color: var(--text-dark);
+	margin: 0;
+	padding-top: 20px;
+}
+
+.notes-white ul {
+	margin:0;
+	padding: 20px 10px;
+	list-style-type: circle;
+	list-style-position: inside;
+	font-family: var(--p-font);
+	color: var(--text-medium);
+	font-size: 12px;
+}
+
+/* -- formatting portfolio.html starts here --*/
+
+.container-portfolio{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 50px 0 70px 0;
+}
+
+.portfolio-wrapper {
+	width: 20%;
+	display: inline-block;
+	text-align: left;
+	margin-right: 30px;
+}
+
+.portfolio-wrapper .h2-border {
+align-items: center;
+}
+
+.case_studies-wrapper{
+	display: flex;
+	flex-direction: column;
+	border: 1px solid black;
+	width: 50%;
+}
+.portfolio-card{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.portfolio-img {
+	width: 40%;
+	display: flex;
+	flex-direction: row;
+}
+
+.portfolio-card img{
+	padding: 20px;
+}
+
+.card-txt .title{
+	color: var(--text-dark);
+	
+}
+
+
+button{
+	background-color: var(--button) ;
+	border-radius: 20px;
+	width: 6em;
+	font-family: var(--primary-font);
+	font-size: 20px;
+	color: var(--text-medium);
+	padding: 5px;
+}
+button:hover {
+	background-color: var(--highlight);
+}
+
+button a {
+	text-decoration: none;
+	color: var(--text-medium);
+} 
