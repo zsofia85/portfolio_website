@@ -409,41 +409,25 @@ footer h3 {
 
 /* -- formatting about.html starts here --*/
 
-.h1-border {
-	width: 50%;
-	margin-bottom: 30px;
-	border-top: solid 1px var(--text-medium);
-	border-bottom: solid 1px var(--text-medium);
-}
 
 .container-about {
 	width: 100%;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	margin: 50px 0 70px 0;
+	border: solid 1px black;
+	align-items: center;
 }
 
 .about-wrapper {
-	width: 50%;
+	width: 75%;
 	display: flex;
 	flex-direction: row;
-	margin-right: 30px;
-}
-
-.wrapper-box {
-	width: 50%;
-	padding-left: 30px;
-}
-
-.process-wrapper-top {
-	padding: 0;
-	margin: 0;
-	display: flex;
-	justify-content: center;
 }
 
 .mini-postit {
-	width: 33.33333%;
+	width: 60%;
 	box-shadow: 3px 6px 12px #808080;
 	border-radius: 2%;
 	text-align: center;
@@ -452,6 +436,21 @@ footer h3 {
 .profil {
 	margin: 0;
 	width: 100%;
+}
+
+.about-txt{
+	padding: 0 30px;
+}
+
+.wrapper-box {
+	width: 75%;
+}
+
+.process-wrapper-top {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
 }
 
 .process-txt {
@@ -465,7 +464,6 @@ footer h3 {
 	background-image: linear-gradient(var(--background-yellow), rgb(242, 234, 124));
 	padding: 0;
 	margin: 0;
-	width: 100%;
 	display: flex;
 	justify-content: center;
 	border-radius: 2%;
@@ -510,7 +508,7 @@ footer h3 {
 	list-style-position: inside;
 	font-family: var(--p-font);
 	color: var(--text-medium);
-	font-size: 12px;
+	font-size: 1em;
 }
 
 /* -- formatting portfolio.html starts here --*/
