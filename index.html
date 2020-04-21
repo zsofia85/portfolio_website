@@ -6,11 +6,16 @@
 	<link href="assets/style.css" media="screen" rel="stylesheet" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Personal Portfolio Zsofia Csagoly">
-	<meta property="og:title" content="Portfolio Zsofia Csagoly">
-	<meta property="og:description" content="Showcasing processes, skills and competencies">
+	<meta property="og:site_name" content="Portfolio | Zsofia Csagoly" />
+	<meta property="og:title" content="Portfolio | Zsofia Csagoly">
+	<meta property="og:url"
+		content="http://des-iis.ucn.dk/mmdi0919/1081560/Sem2/sem2tem3/Portfolio_V1/portfolio.html" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="Showcasing professional processes, skills and competencies">
 	<title>Portfolio | Zsofia Csagoly</title>
 	<link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Lato|Mate+SC&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/cd84c3b3e6.js" crossorigin="anonymous"></script>
+	<script defer src="assets/script.js"></script>
 </head>
 
 <body id="frontPage">
@@ -19,17 +24,33 @@
 			<ul class="nav">
 				<li><a href="about.html">about</a></li>
 				<li><a href="portfolio.html">portfolio</a></li>
+				<li data-popup-target="#popup"><a>contact</a></li>
 				<li id="logo"><a class="home" href="index.html">zsofia csagoly</a></li>
 			</ul>
 		</nav>
 	</header>
 
+	<div class="popup active" id="popup">
+		<div class="popup-header">
+			<div data-close-button class="close-button">&times;</div>
+		</div>
+		<div class="popup-body">
+			<div class="popup-title">Looking forward hearing from you.</div>
+			<div class="popup-detail">email | zsofia.csagoly@gmail.com <br>
+				tel | +45 9188 0746</div>
+			<div class="popup-cv">
+				access my CV
+				<a href="assets/img/CV_Zsofia Csagoly.pdf" target="_blank"><i class="far fa-file-pdf fa-2x"></i></a>
+			</div>
+		</div>
+	</div>
+
+
 	<div class="container-intro">
 		<section class="intro-wrap">
 			<div class="intro-txt">
 				<h1>Zsofia Csagoly</h1>
-				<h3>aspiring UX/UI professional
-					with background in research</h3>
+				<h3>here to be part of the solution by creating simple, valuable and meaningful experiences</h3>
 			</div>
 		</section>
 	</div>
@@ -69,8 +90,8 @@
 
 	<div class="pitch-wrap">
 		<h3 class="pitch">
-			A multimedia design student, who is passionate about informative, intuitive visuals. <br>
-			I am here to be part of the solution by creating simple, valuable and meaningful experiences.
+			A multimedia design student, who is passionate about informative, intuitive visuals.
+			Aspiring UX/UI professional with background in research .
 		</h3>
 	</div>
 
@@ -95,9 +116,12 @@
 				<h3>| Aalborg | <br>
 					Denmark </h3>
 			</div>
+			<div class="copyright">
+				<p>© 2020 by Zsofia Csagoly</p>
+			</div>
 		</div>
 	</footer>
-
+	<div id="overlay"></div>
 </body>
 
 </html>
