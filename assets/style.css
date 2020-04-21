@@ -433,11 +433,19 @@ footer h3 {
 
 .profil {
 	margin: 0;
+	padding: 0;
 	width: 100%;
 }
 
+.about-title{
+	padding: 0 30px;
+	justify-content: center;
+}
+.about-title h2{
+	padding: 0;
+}
 .about-txt {
-	padding: 30px 30px;
+	padding: 20px 0 0 30px;
 }
 
 .wrapper-box {
