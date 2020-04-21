@@ -437,6 +437,9 @@ footer h3 {
 	width: 100%;
 }
 
+.about-right {
+	width: 70%;
+}
 .about-title{
 	padding: 0 30px;
 	justify-content: center;
@@ -445,7 +448,10 @@ footer h3 {
 	padding: 0;
 }
 .about-txt {
-	padding: 20px 0 0 30px;
+	padding: 20px 0 20px 30px;
+}
+.about-txt p {
+	font-size: 1.25em;
 }
 
 .wrapper-box {
@@ -584,3 +590,5 @@ button a {
 	text-decoration: none;
 	color: var(--text-medium);
 }
+
+@media only screen and (max-width: 768px)
