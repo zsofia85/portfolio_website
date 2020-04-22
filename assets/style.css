@@ -125,6 +125,7 @@ p {
 	background-color: var(--text-light);
 	width: 40%;
 	height: 80vh;
+	min-width: 300px;
 }
 
 .popup.active {
@@ -162,16 +163,14 @@ p {
 	padding: 0 0 40px 0;
 }
 
-.popup-body .popup-detail {
+.popup-detail {
 	font-size: 1.25rem;
 	font-family: var(--p-font);
-	justify-content: center;
 }
 
 .popup-cv {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	padding-top: 40px;
 	font-family: var(--p-font);
@@ -179,7 +178,7 @@ p {
 }
 
 .popup-cv i {
-	color: var(--text-medium);
+	color: var(--highlight);
 	padding-top: 10px;
 }
 
@@ -264,6 +263,7 @@ p {
 
 .postit {
 	width: 23%;
+	min-width: 300px;
 	height: 320px;
 	box-shadow: 3px 6px 12px #808080;
 	border-radius: 2%;
@@ -426,7 +426,7 @@ footer h3 {
 }
 
 .mini-postit {
-	width: 60%;
+	width: 30%;
 	border-radius: 2%;
 	text-align: center;
 }
@@ -451,10 +451,11 @@ footer h3 {
 	padding: 20px 0 20px 30px;
 }
 .about-txt p {
-	font-size: 1.25em;
+	font-size: 1em;
 }
 
 .wrapper-box {
+	margin-top: 30px;
 	width: 75%;
 }
 
@@ -504,6 +505,7 @@ footer h3 {
 	margin-bottom: -20px;
 	margin-top: 40px;
 	padding-top: 40px;
+	min-width: 300px;
 }
 
 .notes-white h3 {
@@ -522,6 +524,7 @@ footer h3 {
 	font-family: var(--p-font);
 	color: var(--text-medium);
 	font-size: 1em;
+	letter-spacing: 0.025rem;
 }
 
 /* -- formatting portfolio.html starts here --*/
@@ -564,10 +567,13 @@ footer h3 {
 
 .card-txt .title {
 	color: var(--text-dark);
+	font-size: 1.25em;
 }
 
 .card-txt p {
 	padding: 50px 0;
+	font-size: 1em;
+	letter-spacing: 0.025rem;
 }
 
 button {
