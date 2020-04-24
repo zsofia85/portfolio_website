@@ -6,7 +6,7 @@ Zsofia Csagoly */
 https://www.youtube.com/watch?v=MBaw_6cPmAw */
 
 const openPopupButtons = document.querySelectorAll ('[data-popup-target]')
-const closePopupButtons = document.querySelectorAll ('[data-close-button')
+const closePopupButtons = document.querySelectorAll ('[data-close-button]')
 const overlay = document.getElementById('overlay')
 
 
