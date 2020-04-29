@@ -1,5 +1,7 @@
 @charset "UTF-8";
-/* CSS Document */
+/* CSS Document 
+Zsofia Csagoly - mmdi 0919
+Personal Portfolio_V1 */
 
 * {
 	box-sizing: border-box;
@@ -14,6 +16,7 @@
 	--background-pink: #FFD8C7;
 	--background-blue: #D3F4FF;
 	--background-green: #E3F88E;
+	--background-neutral: #f3f5ec;
 	--text-light: #FFFFF0;
 	--text-medium: #808080;
 	--text-dark: #222222;
@@ -73,9 +76,14 @@ p {
 	width: 100%;
 	height: 40px;
 	display: flex;
+	position: fixed;
+	z-index: 3;
+	background-color: #ffffff;
 	align-items: center;
 	list-style-type: none;
 	padding: 2rem;
+	top: 0;
+	margin: 0;
 }
 
 .nav a {
@@ -122,7 +130,7 @@ p {
 	transition: 300ms ease-out;
 	border-radius: 5px;
 	z-index: 5;
-	background-color: var(--text-light);
+	background-color: var(--background-neutral);
 	width: 40%;
 	height: 80vh;
 	min-width: 300px;
@@ -149,7 +157,7 @@ p {
 }
 
 .popup-body {
-	margin: 60px 100px 100px 100px;
+	margin: 30px 90px 100px 90px;
 	padding: 40px;
 	border-right: 1px solid black;
 	border-left: 1px solid black;
@@ -178,13 +186,27 @@ p {
 }
 
 .popup-cv i {
-	color: var(--highlight);
+	color: var(--text-medium);
 	padding-top: 10px;
+}
+
+.popup-links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 30px;
+	font-family: var(--p-font);
+	font-size: 1.25rem;
+}
+
+.popup-links i{
+	color: var(--text-medium);
+	padding-left: 10px;
 }
 
 #overlay {
 	position: fixed;
-	z-index: 2;
+	z-index: 4;
 	opacity: 0;
 	transition: 300ms ease-out;
 	top: 0;
@@ -209,6 +231,7 @@ p {
 	text-align: center;
 	position: absolute;
 	z-index: 1;
+	padding-top: 20vh;
 }
 
 .intro-wrap {
@@ -226,11 +249,15 @@ p {
 	text-align: center;
 }
 
+.intro-txt a{
+	text-decoration: none;
+}
+
 .container-center {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	margin: 110px 0 70px 0;
+	padding-top: 30vh;
 	position: relative;
 	z-index: 0;
 }
@@ -347,7 +374,7 @@ p {
 .pitch-wrap {
 	width: 100%;
 	height: 15vh;
-	margin-bottom: 20px;
+	margin-bottom: 20vh;
 	display: flex;
 	justify-content: center;
 }
@@ -356,13 +383,13 @@ p {
 	width: 50%;
 	display: inline-block;
 	text-align: center;
+	padding-top: 10vh;
 }
 
 /* -- formatting footer -- */
 
 footer {
 	margin: 0;
-	padding: 0;
 	width: 100%;
 	height: 300px;
 	background-color: var(--background-pink);
@@ -415,12 +442,13 @@ footer h3 {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: 50px 0 70px 0;
+	padding-top: 20vh;
 	align-items: center;
+	margin-bottom: 20vh;
 }
 
 .about-wrapper {
-	width: 75%;
+	width: 80%;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -428,9 +456,8 @@ footer h3 {
 }
 
 .mini-postit {
-	width: 30%;
+	width: 40%;
 	border-radius: 2%;
-	
 }
 
 .profil {
@@ -439,8 +466,9 @@ footer h3 {
 	width: 100%;
 }
 
-.about-right {
-	width: 50%;
+.about-content {
+	width: 40%;
+	padding-right: 40px;
 }
 .about-title{
 	padding: 0 30px;
@@ -451,9 +479,11 @@ footer h3 {
 }
 .about-txt {
 	padding: 20px 0 20px 30px;
+	display: flex;
+	flex-direction: column;
 }
 .about-txt p {
-	font-size: 1em;
+	font-size: 1.05em;
 }
 
 .wrapper-box {
@@ -471,14 +501,30 @@ footer h3 {
 .process-txt {
 	margin: 0;
 	display: flex;
+	width: 100%;
+	flex-direction: row;
 	justify-content: center;
+	padding-top: 10vh;
+	align-items: center;
+}
+.process-txt-title {
+	width: 40%;
+	text-align: left;
+	align-items: center;
+}
+.process-txt-content{
+	width: 40%;
+}
+
+.process-txt p{
+	font-size: 1.05em;
 }
 
 .yellow-background {
-	background-color: var(--text-light);
+	background-color: var(--background-neutral);
 	/*background-image: linear-gradient(var(--text-light), rgb(237, 235, 212));*/
 	padding: 0;
-	margin: 0;
+	margin-top: 10vh;
 	display: flex;
 	justify-content: center;
 	border-radius: 2%;
@@ -508,6 +554,8 @@ footer h3 {
 	margin-top: 40px;
 	padding-top: 40px;
 	min-width: 300px;
+	height: 60vh;
+	width: 33.3333%;
 }
 
 .notes-white h3 {
@@ -520,13 +568,17 @@ footer h3 {
 
 .notes-white ul {
 	margin: 0;
-	padding: 20px 10px;
+	padding: 20px 40px;
 	list-style-type: circle;
 	list-style-position: inside;
 	font-family: var(--p-font);
 	color: var(--text-medium);
 	font-size: 1em;
 	letter-spacing: 0.025rem;
+}
+
+.notes-white ul li{
+	padding-top: 10px;
 }
 
 /* -- formatting portfolio.html starts here --*/
@@ -541,7 +593,7 @@ footer h3 {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	padding-top: 10vh;
+	padding-top: 20vh;
 	position: relative;
 	align-items: center;
 }
